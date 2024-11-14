@@ -1,0 +1,41 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 1",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 15,
+    "name": "myproject",
+    "total_instructions": 261
+  },
+  "1": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 38,
+    "loads": {
+      "L": 3
+    },
+    "name": "relu<ap_int<6>, ap_int<6>, ReLU_config3>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 81
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "nnet_reverse.h",
+    "fileloc": 13,
+    "instructions": 30,
+    "loads": {
+      "L": 1
+    },
+    "name": "reverse<ap_int<6>, config2>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 165
+  }
+}

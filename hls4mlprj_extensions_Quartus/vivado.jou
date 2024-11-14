@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 14 11:48:31 2024
+# Process ID: 52244
+# Current directory: /home/crchen/hls4ml-tutorial/hls4mlprj_extensions_Quartus
+# Command line: vivado
+# Log file: /home/crchen/hls4ml-tutorial/hls4mlprj_extensions_Quartus/vivado.log
+# Journal file: /home/crchen/hls4ml-tutorial/hls4mlprj_extensions_Quartus/vivado.jou
+# Running On: Kaohsiung, OS: Linux, CPU Frequency: 2000.000 MHz, CPU Physical cores: 24, Host memory: 134739 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/crchen/ALVEO-PYNQ_ML/ChiJui_TestAXI4Stream_IP/test_apfix_axistream/test_apfix_axistream.xpr
+close_project
+create_project project_1 /home/crchen/hls4ml-tutorial/hls4mlprj_extensions_Quartus/project_1 -part xczu7ev-ffvc1156-2-e
+set_property board_part xilinx.com:zcu104:part0:1.1 [current_project]
+set_property  ip_repo_paths  /home/crchen/hls4ml-tutorial/hls4mlprj_extensions_Quartus/myproject_prj/solution1/impl/ip [current_project]
+update_ip_catalog
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:myproject:1.0 myproject_0
+endgroup
+set_property location {1 122 -36} [get_bd_cells myproject_0]
+set_property location {1 144 -22} [get_bd_cells myproject_0]

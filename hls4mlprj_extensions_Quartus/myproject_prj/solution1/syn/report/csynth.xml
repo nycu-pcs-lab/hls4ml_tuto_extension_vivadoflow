@@ -1,0 +1,804 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
+        <TopModelName>myproject</TopModelName>
+        <TargetClockPeriod>5.00</TargetClockPeriod>
+        <ClockUncertainty>1.35</ClockUncertainty>
+        <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>yes</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>1.976</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <PipelineInitiationInterval>1</PipelineInitiationInterval>
+            <PipelineDepth>1</PipelineDepth>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>firmware/nnet_utils/nnet_reverse.h:18~firmware/myproject.cpp:32</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>50</FF>
+            <LUT>286</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_1</name>
+            <Object>input_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>48</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_1_ap_vld</name>
+            <Object>input_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_0</name>
+            <Object>layer3_out_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_0_ap_vld</name>
+            <Object>layer3_out_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_1</name>
+            <Object>layer3_out_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_1_ap_vld</name>
+            <Object>layer3_out_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_2</name>
+            <Object>layer3_out_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_2_ap_vld</name>
+            <Object>layer3_out_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_3</name>
+            <Object>layer3_out_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_3_ap_vld</name>
+            <Object>layer3_out_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_4</name>
+            <Object>layer3_out_4</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_4_ap_vld</name>
+            <Object>layer3_out_4</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_5</name>
+            <Object>layer3_out_5</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_5_ap_vld</name>
+            <Object>layer3_out_5</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_6</name>
+            <Object>layer3_out_6</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_6_ap_vld</name>
+            <Object>layer3_out_6</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_7</name>
+            <Object>layer3_out_7</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer3_out_7_ap_vld</name>
+            <Object>layer3_out_7</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>myproject</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136</InstName>
+                    <ModuleName>relu_ap_int_6_ap_int_6_ReLU_config3_s</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>136</ID>
+                </Instance>
+            </InstancesList>
+            <BindInstances>call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_7_val call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_6_val call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_5_val call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_4_val call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_3_val call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_2_val call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_1_val call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_0_val</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>relu_ap_int_6_ap_int_6_ReLU_config3_s</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>1.195</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>1</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>firmware/nnet_utils/nnet_activation.h:42</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>0</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>0</UTIL_FF>
+                    <LUT>144</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>myproject</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>1.976</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>1</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>firmware/nnet_utils/nnet_reverse.h:18~firmware/myproject.cpp:32</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>50</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>286</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_7_val" SOURCE="firmware/nnet_utils/nnet_reverse.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="layer2_out"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_6_val" SOURCE="firmware/nnet_utils/nnet_reverse.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="layer2_out_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_5_val" SOURCE="firmware/nnet_utils/nnet_reverse.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="layer2_out_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_4_val" SOURCE="firmware/nnet_utils/nnet_reverse.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="layer2_out_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_3_val" SOURCE="firmware/nnet_utils/nnet_reverse.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="layer2_out_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_2_val" SOURCE="firmware/nnet_utils/nnet_reverse.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="layer2_out_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_1_val" SOURCE="firmware/nnet_utils/nnet_reverse.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="layer2_out_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_0_val" SOURCE="firmware/nnet_utils/nnet_reverse.h:18" STORAGESUBTYPE="" URAM="0" VARIABLE="layer2_out_7"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_export version="1.0.0"/>
+        <config_schedule enable_dsp_full_reg="0"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="input_1" index="0" direction="in" srcType="ap_int&lt;6&gt;*" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="input_1" name="input_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="input_1_ap_vld" name="input_1_ap_vld" usage="control" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="layer3_out" index="1" direction="out" srcType="ap_int&lt;6&gt;*" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="layer3_out_0" name="layer3_out_0" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer3_out_0_ap_vld" name="layer3_out_0_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer3_out_1" name="layer3_out_1" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer3_out_1_ap_vld" name="layer3_out_1_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer3_out_2" name="layer3_out_2" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer3_out_2_ap_vld" name="layer3_out_2_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer3_out_3" name="layer3_out_3" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer3_out_3_ap_vld" name="layer3_out_3_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer3_out_4" name="layer3_out_4" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer3_out_4_ap_vld" name="layer3_out_4_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer3_out_5" name="layer3_out_5" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer3_out_5_ap_vld" name="layer3_out_5_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer3_out_6" name="layer3_out_6" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer3_out_6_ap_vld" name="layer3_out_6_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer3_out_7" name="layer3_out_7" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer3_out_7_ap_vld" name="layer3_out_7_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="input_1" type="data" busTypeName="data" protocol="ap_vld" mode="slave" dataWidth="48">
+            <portMaps>
+                <portMap portMapName="input_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="input_1"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer3_out_0" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="layer3_out_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer3_out_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="layer3_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer3_out_1" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="layer3_out_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer3_out_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="layer3_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer3_out_2" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="layer3_out_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer3_out_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="layer3_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer3_out_3" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="layer3_out_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer3_out_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="layer3_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer3_out_4" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="layer3_out_4">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer3_out_4</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="layer3_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer3_out_5" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="layer3_out_5">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer3_out_5</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="layer3_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer3_out_6" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="layer3_out_6">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer3_out_6</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="layer3_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer3_out_7" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="layer3_out_7">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer3_out_7</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="layer3_out"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="input_1">ap_vld, in, 48</column>
+                    <column name="layer3_out_0">ap_vld, out, 6</column>
+                    <column name="layer3_out_1">ap_vld, out, 6</column>
+                    <column name="layer3_out_2">ap_vld, out, 6</column>
+                    <column name="layer3_out_3">ap_vld, out, 6</column>
+                    <column name="layer3_out_4">ap_vld, out, 6</column>
+                    <column name="layer3_out_5">ap_vld, out, 6</column>
+                    <column name="layer3_out_6">ap_vld, out, 6</column>
+                    <column name="layer3_out_7">ap_vld, out, 6</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="input_1">in, ap_int&lt;6&gt;*</column>
+                    <column name="layer3_out">out, ap_int&lt;6&gt;*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="input_1">input_1, port</column>
+                    <column name="input_1">input_1_ap_vld, port</column>
+                    <column name="layer3_out">layer3_out_0, port</column>
+                    <column name="layer3_out">layer3_out_0_ap_vld, port</column>
+                    <column name="layer3_out">layer3_out_1, port</column>
+                    <column name="layer3_out">layer3_out_1_ap_vld, port</column>
+                    <column name="layer3_out">layer3_out_2, port</column>
+                    <column name="layer3_out">layer3_out_2_ap_vld, port</column>
+                    <column name="layer3_out">layer3_out_3, port</column>
+                    <column name="layer3_out">layer3_out_3_ap_vld, port</column>
+                    <column name="layer3_out">layer3_out_4, port</column>
+                    <column name="layer3_out">layer3_out_4_ap_vld, port</column>
+                    <column name="layer3_out">layer3_out_5, port</column>
+                    <column name="layer3_out">layer3_out_5_ap_vld, port</column>
+                    <column name="layer3_out">layer3_out_6, port</column>
+                    <column name="layer3_out">layer3_out_6_ap_vld, port</column>
+                    <column name="layer3_out">layer3_out_7, port</column>
+                    <column name="layer3_out">layer3_out_7_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="array_reshape" location="firmware/myproject.cpp:13" status="valid" parentFunction="myproject" variable="input_1" isDirective="0" options="variable=input_1 complete dim=0"/>
+        <Pragma type="array_partition" location="firmware/myproject.cpp:14" status="valid" parentFunction="myproject" variable="layer3_out" isDirective="0" options="variable=layer3_out complete dim=0"/>
+        <Pragma type="interface" location="firmware/myproject.cpp:15" status="valid" parentFunction="myproject" variable="input_1,layer3_out" isDirective="0" options="ap_vld port=input_1,layer3_out"/>
+        <Pragma type="pipeline" location="firmware/myproject.cpp:16" status="valid" parentFunction="myproject" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="firmware/myproject.cpp:31" status="valid" parentFunction="myproject" variable="layer2_out" isDirective="0" options="variable=layer2_out complete dim=0"/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:29" status="valid" parentFunction="linear" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:40" status="valid" parentFunction="relu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:54" status="valid" parentFunction="relu_max" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:109" status="valid" parentFunction="sigmoid" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:171" status="valid" parentFunction="softmax_latency" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="firmware/nnet_utils/nnet_activation.h:193" status="valid" parentFunction="softmax_latency" variable="exp_res" isDirective="0" options="variable=exp_res complete"/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation.h:196" status="valid" parentFunction="softmax_latency" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation.h:210" status="valid" parentFunction="softmax_latency" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:217" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation.h:244" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="firmware/nnet_utils/nnet_activation.h:250" status="valid" parentFunction="softmax_stable" variable="exp_res" isDirective="0" options="variable=exp_res complete"/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation.h:253" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation.h:267" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:315" status="valid" parentFunction="softmax_legacy" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation.h:360" status="valid" parentFunction="softmax_argmax" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:368" status="valid" parentFunction="softmax_argmax" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="firmware/nnet_utils/nnet_activation.h:380" status="valid" parentFunction="softmax" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:427" status="valid" parentFunction="tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="function_instantiate" location="firmware/nnet_utils/nnet_activation.h:456" status="valid" parentFunction="unary_lut" variable="table" isDirective="0" options="variable=table"/>
+        <Pragma type="array_partition" location="firmware/nnet_utils/nnet_activation.h:457" status="valid" parentFunction="unary_lut" variable="table" isDirective="0" options="variable=table"/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation.h:460" status="valid" parentFunction="unary_lut" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:471" status="valid" parentFunction="hard_sigmoid" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:486" status="valid" parentFunction="hard_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:504" status="valid" parentFunction="leaky_relu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:521" status="valid" parentFunction="thresholded_relu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:566" status="valid" parentFunction="softplus" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:615" status="valid" parentFunction="softsign" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:664" status="valid" parentFunction="elu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:720" status="valid" parentFunction="selu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:743" status="valid" parentFunction="prelu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:760" status="valid" parentFunction="binary_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation.h:780" status="valid" parentFunction="ternary_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:20" status="valid" parentFunction="linear" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:28" status="valid" parentFunction="linear" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:42" status="valid" parentFunction="relu" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:50" status="valid" parentFunction="relu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:81" status="valid" parentFunction="sigmoid" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:89" status="valid" parentFunction="sigmoid" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="firmware/nnet_utils/nnet_activation_stream.h:133" status="valid" parentFunction="softmax_latency" variable="exp_res" isDirective="0" options="variable=exp_res complete"/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:137" status="valid" parentFunction="softmax_latency" variable="" isDirective="0" options="II=ii"/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:142" status="valid" parentFunction="softmax_latency" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:161" status="valid" parentFunction="softmax_latency" variable="" isDirective="0" options=""/>
+        <Pragma type="allocation" location="firmware/nnet_utils/nnet_activation_stream.h:162" status="valid" parentFunction="softmax_latency" variable="" isDirective="0" options="operation instances=mul limit=multiplier_limit"/>
+        <Pragma type="array_partition" location="firmware/nnet_utils/nnet_activation_stream.h:194" status="valid" parentFunction="softmax_stable" variable="data_array" isDirective="0" options="variable=data_array complete"/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:197" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options="II=ii"/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:202" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:214" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="firmware/nnet_utils/nnet_activation_stream.h:220" status="valid" parentFunction="softmax_stable" variable="exp_res" isDirective="0" options="variable=exp_res complete"/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:223" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:242" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options=""/>
+        <Pragma type="allocation" location="firmware/nnet_utils/nnet_activation_stream.h:243" status="valid" parentFunction="softmax_stable" variable="" isDirective="0" options="operation instances=mul limit=multiplier_limit"/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:275" status="valid" parentFunction="softmax_legacy" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:279" status="valid" parentFunction="softmax_legacy" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:286" status="valid" parentFunction="softmax_legacy" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:289" status="valid" parentFunction="softmax_legacy" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:312" status="valid" parentFunction="softmax_legacy" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:329" status="valid" parentFunction="softmax_argmax" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:334" status="valid" parentFunction="softmax_argmax" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:342" status="valid" parentFunction="softmax_argmax" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:393" status="valid" parentFunction="tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:401" status="valid" parentFunction="tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="function_instantiate" location="firmware/nnet_utils/nnet_activation_stream.h:421" status="valid" parentFunction="unary_lut" variable="table" isDirective="0" options="variable=table"/>
+        <Pragma type="array_partition" location="firmware/nnet_utils/nnet_activation_stream.h:422" status="valid" parentFunction="unary_lut" variable="table" isDirective="0" options="variable=table complete"/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:426" status="valid" parentFunction="unary_lut" variable="" isDirective="0" options="II=CONFIG_T::reuse_factor rewind"/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:434" status="valid" parentFunction="unary_lut" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:452" status="valid" parentFunction="hard_sigmoid" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:460" status="valid" parentFunction="hard_sigmoid" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:477" status="valid" parentFunction="hard_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:485" status="valid" parentFunction="hard_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:506" status="valid" parentFunction="leaky_relu" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:514" status="valid" parentFunction="leaky_relu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:532" status="valid" parentFunction="thresholded_relu" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:540" status="valid" parentFunction="thresholded_relu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:571" status="valid" parentFunction="softplus" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:579" status="valid" parentFunction="softplus" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:612" status="valid" parentFunction="softsign" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:620" status="valid" parentFunction="softsign" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:653" status="valid" parentFunction="elu" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:661" status="valid" parentFunction="elu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:701" status="valid" parentFunction="selu" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:709" status="valid" parentFunction="selu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:733" status="valid" parentFunction="prelu" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:741" status="valid" parentFunction="prelu" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:758" status="valid" parentFunction="binary_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:766" status="valid" parentFunction="binary_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_activation_stream.h:783" status="valid" parentFunction="ternary_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_activation_stream.h:791" status="valid" parentFunction="ternary_tanh" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:23" status="valid" parentFunction="clone_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_stream.h:33" status="valid" parentFunction="clone_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:47" status="valid" parentFunction="clone_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_stream.h:59" status="valid" parentFunction="clone_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:74" status="valid" parentFunction="repack_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_stream.h:81" status="valid" parentFunction="repack_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:91" status="valid" parentFunction="repack_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:99" status="valid" parentFunction="repack_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_stream.h:103" status="valid" parentFunction="repack_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:114" status="valid" parentFunction="repack_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_stream.h:118" status="valid" parentFunction="repack_stream" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:139" status="valid" parentFunction="broadcast_stream_1x1xc" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:142" status="valid" parentFunction="broadcast_stream_1x1xc" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_stream.h:146" status="valid" parentFunction="broadcast_stream_1x1xc" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:160" status="valid" parentFunction="broadcast_stream_hxwx1" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_stream.h:165" status="valid" parentFunction="broadcast_stream_hxwx1" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="firmware/nnet_utils/nnet_stream.h:185" status="valid" parentFunction="transpose_2d" variable="data_array" isDirective="0" options="variable=data_array complete"/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:188" status="valid" parentFunction="transpose_2d" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="firmware/nnet_utils/nnet_stream.h:196" status="valid" parentFunction="transpose_2d" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/nnet_utils/nnet_types.h:28" status="valid" parentFunction="operator=" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>
+

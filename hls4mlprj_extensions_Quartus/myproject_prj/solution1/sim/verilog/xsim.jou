@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 14 11:45:03 2024
+# Process ID: 50746
+# Current directory: /home/crchen/hls4ml-tutorial/hls4mlprj_extensions_Quartus/myproject_prj/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/myproject/xsim_script.tcl}
+# Log file: /home/crchen/hls4ml-tutorial/hls4mlprj_extensions_Quartus/myproject_prj/solution1/sim/verilog/xsim.log
+# Journal file: /home/crchen/hls4ml-tutorial/hls4mlprj_extensions_Quartus/myproject_prj/solution1/sim/verilog/xsim.jou
+# Running On: Kaohsiung, OS: Linux, CPU Frequency: 2000.000 MHz, CPU Physical cores: 24, Host memory: 134739 MB
+#-----------------------------------------------------------
+source xsim.dir/myproject/xsim_script.tcl
+open_wave_config myproject_dataflow_ana.wcfg
+source myproject.tcl

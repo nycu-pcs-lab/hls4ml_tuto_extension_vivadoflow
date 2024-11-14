@@ -1,0 +1,235 @@
+
+
+================================================================
+== Synthesis Summary Report of 'myproject'
+================================================================
++ General Information: 
+    * Date:           Thu Nov 14 11:44:51 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        myproject_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |                  Modules                 | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
+    |                  & Loops                 | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ myproject                               |    II|  1.67|        0|   0.000|         -|        1|     -|       yes|     -|   -|  50 (~0%)|  286 (~0%)|    -|
+    | + relu_ap_int_6_ap_int_6_ReLU_config3_s  |    II|  2.45|        0|   0.000|         -|        1|     -|       yes|     -|   -|         -|  144 (~0%)|    -|
+    +------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++--------------+--------+-----------+----------+
+| Port         | Mode   | Direction | Bitwidth |
++--------------+--------+-----------+----------+
+| input_1      | ap_vld | in        | 48       |
+| layer3_out_0 | ap_vld | out       | 6        |
+| layer3_out_1 | ap_vld | out       | 6        |
+| layer3_out_2 | ap_vld | out       | 6        |
+| layer3_out_3 | ap_vld | out       | 6        |
+| layer3_out_4 | ap_vld | out       | 6        |
+| layer3_out_5 | ap_vld | out       | 6        |
+| layer3_out_6 | ap_vld | out       | 6        |
+| layer3_out_7 | ap_vld | out       | 6        |
++--------------+--------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+------------+
+| Argument   | Direction | Datatype   |
++------------+-----------+------------+
+| input_1    | in        | ap_int<6>* |
+| layer3_out | out       | ap_int<6>* |
++------------+-----------+------------+
+
+* SW-to-HW Mapping
++------------+---------------------+---------+
+| Argument   | HW Interface        | HW Type |
++------------+---------------------+---------+
+| input_1    | input_1             | port    |
+| input_1    | input_1_ap_vld      | port    |
+| layer3_out | layer3_out_0        | port    |
+| layer3_out | layer3_out_0_ap_vld | port    |
+| layer3_out | layer3_out_1        | port    |
+| layer3_out | layer3_out_1_ap_vld | port    |
+| layer3_out | layer3_out_2        | port    |
+| layer3_out | layer3_out_2_ap_vld | port    |
+| layer3_out | layer3_out_3        | port    |
+| layer3_out | layer3_out_3_ap_vld | port    |
+| layer3_out | layer3_out_4        | port    |
+| layer3_out | layer3_out_4_ap_vld | port    |
+| layer3_out | layer3_out_5        | port    |
+| layer3_out | layer3_out_5_ap_vld | port    |
+| layer3_out | layer3_out_6        | port    |
+| layer3_out | layer3_out_6_ap_vld | port    |
+| layer3_out | layer3_out_7        | port    |
+| layer3_out | layer3_out_7_ap_vld | port    |
++------------+---------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                                                               | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++--------------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| + myproject                                                        | 0   |        |              |     |        |         |
+|   call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_7_val |     |        | layer2_out   | add | fabric | 0       |
+|   call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_6_val |     |        | layer2_out_1 | add | fabric | 0       |
+|   call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_5_val |     |        | layer2_out_2 | add | fabric | 0       |
+|   call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_4_val |     |        | layer2_out_3 | add | fabric | 0       |
+|   call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_3_val |     |        | layer2_out_4 | add | fabric | 0       |
+|   call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_2_val |     |        | layer2_out_5 | add | fabric | 0       |
+|   call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_1_val |     |        | layer2_out_6 | add | fabric | 0       |
+|   call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136_data_0_val |     |        | layer2_out_7 | add | fabric | 0       |
++--------------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------------+------------------------------------------------+--------------------------------------------------------------------------------+
+| Type                 | Options                                        | Location                                                                       |
++----------------------+------------------------------------------------+--------------------------------------------------------------------------------+
+| array_reshape        | variable=input_1 complete dim=0                | firmware/myproject.cpp:13 in myproject, input_1                                |
+| array_partition      | variable=layer3_out complete dim=0             | firmware/myproject.cpp:14 in myproject, layer3_out                             |
+| interface            | ap_vld port=input_1,layer3_out                 | firmware/myproject.cpp:15 in myproject, input_1,layer3_out                     |
+| pipeline             |                                                | firmware/myproject.cpp:16 in myproject                                         |
+| array_partition      | variable=layer2_out complete dim=0             | firmware/myproject.cpp:31 in myproject, layer2_out                             |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:29 in linear                             |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:40 in relu                               |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:54 in relu_max                           |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:109 in sigmoid                           |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:171 in softmax_latency                   |
+| array_partition      | variable=exp_res complete                      | firmware/nnet_utils/nnet_activation.h:193 in softmax_latency, exp_res          |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation.h:196 in softmax_latency                   |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation.h:210 in softmax_latency                   |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:217 in softmax_stable                    |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation.h:244 in softmax_stable                    |
+| array_partition      | variable=exp_res complete                      | firmware/nnet_utils/nnet_activation.h:250 in softmax_stable, exp_res           |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation.h:253 in softmax_stable                    |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation.h:267 in softmax_stable                    |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:315 in softmax_legacy                    |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation.h:360 in softmax_argmax                    |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:368 in softmax_argmax                    |
+| inline               |                                                | firmware/nnet_utils/nnet_activation.h:380 in softmax                           |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:427 in tanh                              |
+| function_instantiate | variable=table                                 | firmware/nnet_utils/nnet_activation.h:456 in unary_lut, table                  |
+| array_partition      | variable=table                                 | firmware/nnet_utils/nnet_activation.h:457 in unary_lut, table                  |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation.h:460 in unary_lut                         |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:471 in hard_sigmoid                      |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:486 in hard_tanh                         |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:504 in leaky_relu                        |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:521 in thresholded_relu                  |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:566 in softplus                          |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:615 in softsign                          |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:664 in elu                               |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:720 in selu                              |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:743 in prelu                             |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:760 in binary_tanh                       |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation.h:780 in ternary_tanh                      |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:20 in linear                      |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:28 in linear                      |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:42 in relu                        |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:50 in relu                        |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:81 in sigmoid                     |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:89 in sigmoid                     |
+| array_partition      | variable=exp_res complete                      | firmware/nnet_utils/nnet_activation_stream.h:133 in softmax_latency, exp_res   |
+| pipeline             | II=ii                                          | firmware/nnet_utils/nnet_activation_stream.h:137 in softmax_latency            |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:142 in softmax_latency            |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:161 in softmax_latency            |
+| allocation           | operation instances=mul limit=multiplier_limit | firmware/nnet_utils/nnet_activation_stream.h:162 in softmax_latency            |
+| array_partition      | variable=data_array complete                   | firmware/nnet_utils/nnet_activation_stream.h:194 in softmax_stable, data_array |
+| pipeline             | II=ii                                          | firmware/nnet_utils/nnet_activation_stream.h:197 in softmax_stable             |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:202 in softmax_stable             |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:214 in softmax_stable             |
+| array_partition      | variable=exp_res complete                      | firmware/nnet_utils/nnet_activation_stream.h:220 in softmax_stable, exp_res    |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:223 in softmax_stable             |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:242 in softmax_stable             |
+| allocation           | operation instances=mul limit=multiplier_limit | firmware/nnet_utils/nnet_activation_stream.h:243 in softmax_stable             |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:275 in softmax_legacy             |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:279 in softmax_legacy             |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:286 in softmax_legacy             |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:289 in softmax_legacy             |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:312 in softmax_legacy             |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:329 in softmax_argmax             |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:334 in softmax_argmax             |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:342 in softmax_argmax             |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:393 in tanh                       |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:401 in tanh                       |
+| function_instantiate | variable=table                                 | firmware/nnet_utils/nnet_activation_stream.h:421 in unary_lut, table           |
+| array_partition      | variable=table complete                        | firmware/nnet_utils/nnet_activation_stream.h:422 in unary_lut, table           |
+| pipeline             | II=CONFIG_T::reuse_factor rewind               | firmware/nnet_utils/nnet_activation_stream.h:426 in unary_lut                  |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:434 in unary_lut                  |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:452 in hard_sigmoid               |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:460 in hard_sigmoid               |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:477 in hard_tanh                  |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:485 in hard_tanh                  |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:506 in leaky_relu                 |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:514 in leaky_relu                 |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:532 in thresholded_relu           |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:540 in thresholded_relu           |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:571 in softplus                   |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:579 in softplus                   |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:612 in softsign                   |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:620 in softsign                   |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:653 in elu                        |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:661 in elu                        |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:701 in selu                       |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:709 in selu                       |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:733 in prelu                      |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:741 in prelu                      |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:758 in binary_tanh                |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:766 in binary_tanh                |
+| pipeline             |                                                | firmware/nnet_utils/nnet_activation_stream.h:783 in ternary_tanh               |
+| unroll               |                                                | firmware/nnet_utils/nnet_activation_stream.h:791 in ternary_tanh               |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:23 in clone_stream                           |
+| unroll               |                                                | firmware/nnet_utils/nnet_stream.h:33 in clone_stream                           |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:47 in clone_stream                           |
+| unroll               |                                                | firmware/nnet_utils/nnet_stream.h:59 in clone_stream                           |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:74 in repack_stream                          |
+| unroll               |                                                | firmware/nnet_utils/nnet_stream.h:81 in repack_stream                          |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:91 in repack_stream                          |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:99 in repack_stream                          |
+| unroll               |                                                | firmware/nnet_utils/nnet_stream.h:103 in repack_stream                         |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:114 in repack_stream                         |
+| unroll               |                                                | firmware/nnet_utils/nnet_stream.h:118 in repack_stream                         |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:139 in broadcast_stream_1x1xc                |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:142 in broadcast_stream_1x1xc                |
+| unroll               |                                                | firmware/nnet_utils/nnet_stream.h:146 in broadcast_stream_1x1xc                |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:160 in broadcast_stream_hxwx1                |
+| unroll               |                                                | firmware/nnet_utils/nnet_stream.h:165 in broadcast_stream_hxwx1                |
+| array_partition      | variable=data_array complete                   | firmware/nnet_utils/nnet_stream.h:185 in transpose_2d, data_array              |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:188 in transpose_2d                          |
+| pipeline             |                                                | firmware/nnet_utils/nnet_stream.h:196 in transpose_2d                          |
+| unroll               |                                                | firmware/nnet_utils/nnet_types.h:28 in operator=                               |
++----------------------+------------------------------------------------+--------------------------------------------------------------------------------+
+
+

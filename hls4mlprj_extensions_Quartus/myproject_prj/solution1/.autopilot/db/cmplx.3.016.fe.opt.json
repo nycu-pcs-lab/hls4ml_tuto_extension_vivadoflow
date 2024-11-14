@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 55,
+    "loads": {
+      "T": 1
+    },
+    "name": "myproject",
+    "total_instructions": 105
+  },
+  "1": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 50,
+    "name": "relu<ap_int<6>, ap_int<6>, ReLU_config3>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 50
+  }
+}

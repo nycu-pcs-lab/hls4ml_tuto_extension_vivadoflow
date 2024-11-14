@@ -1,0 +1,588 @@
+{
+  "Top": "myproject",
+  "RtlTop": "myproject",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "myproject_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "zynquplus",
+    "Device": "xczu7ev",
+    "Package": "-ffvc1156",
+    "Speed": "-2-e",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "input_1": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "ap_int<6>*",
+      "srcSize": "8",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "input_1",
+          "name": "input_1",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "input_1_ap_vld",
+          "name": "input_1_ap_vld",
+          "usage": "control",
+          "direction": "in"
+        }
+      ]
+    },
+    "layer3_out": {
+      "index": "1",
+      "direction": "out",
+      "srcType": "ap_int<6>*",
+      "srcSize": "8",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "layer3_out_0",
+          "name": "layer3_out_0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_0_ap_vld",
+          "name": "layer3_out_0_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_1",
+          "name": "layer3_out_1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_1_ap_vld",
+          "name": "layer3_out_1_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_2",
+          "name": "layer3_out_2",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_2_ap_vld",
+          "name": "layer3_out_2_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_3",
+          "name": "layer3_out_3",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_3_ap_vld",
+          "name": "layer3_out_3_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_4",
+          "name": "layer3_out_4",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_4_ap_vld",
+          "name": "layer3_out_4_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_5",
+          "name": "layer3_out_5",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_5_ap_vld",
+          "name": "layer3_out_5_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_6",
+          "name": "layer3_out_6",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_6_ap_vld",
+          "name": "layer3_out_6_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_7",
+          "name": "layer3_out_7",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer3_out_7_ap_vld",
+          "name": "layer3_out_7_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_compile -name_max_length=80",
+      "config_compile -complex-mul-dsp=0",
+      "config_schedule -enable_dsp_full_reg=0",
+      "config_export -format=ip_catalog",
+      "config_export -version=1.0.0"
+    ],
+    "DirectiveTcl": ["set_directive_top myproject -name myproject"],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "myproject"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "5",
+    "Uncertainty": "1.35",
+    "IsCombinational": "0",
+    "II": "1",
+    "Latency": "0"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 5.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "myproject",
+    "Version": "1.0",
+    "DisplayName": "Myproject",
+    "Revision": "0",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_myproject_1_0.zip"
+  },
+  "Files": {
+    "CSource": [
+      "..\/..\/.\/firmware\/myproject.cpp",
+      "..\/..\/firmware\/myproject.cpp"
+    ],
+    "Vhdl": [
+      "impl\/vhdl\/myproject_relu_ap_int_6_ap_int_6_ReLU_config3_s.vhd",
+      "impl\/vhdl\/myproject.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/myproject_relu_ap_int_6_ap_int_6_ReLU_config3_s.v",
+      "impl\/verilog\/myproject.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "CsynthXml": "syn\/report\/csynth.xml",
+    "DebugDir": ".debug",
+    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
+    "Xo": "",
+    "XoHlsDir": "",
+    "ProtoInst": [".debug\/myproject.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {"ASSOCIATED_RESET": "ap_rst"},
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_rst": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_HIGH"},
+      "portMap": {"ap_rst": "RST"},
+      "ports": ["ap_rst"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "input_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "slave",
+      "dataWidth": "48",
+      "portMap": {"input_1": "DATA"},
+      "ports": ["input_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "input_1"
+        }]
+    },
+    "layer3_out_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"layer3_out_0": "DATA"},
+      "ports": ["layer3_out_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer3_out"
+        }]
+    },
+    "layer3_out_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"layer3_out_1": "DATA"},
+      "ports": ["layer3_out_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer3_out"
+        }]
+    },
+    "layer3_out_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"layer3_out_2": "DATA"},
+      "ports": ["layer3_out_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer3_out"
+        }]
+    },
+    "layer3_out_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"layer3_out_3": "DATA"},
+      "ports": ["layer3_out_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer3_out"
+        }]
+    },
+    "layer3_out_4": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"layer3_out_4": "DATA"},
+      "ports": ["layer3_out_4"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer3_out"
+        }]
+    },
+    "layer3_out_5": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"layer3_out_5": "DATA"},
+      "ports": ["layer3_out_5"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer3_out"
+        }]
+    },
+    "layer3_out_6": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"layer3_out_6": "DATA"},
+      "ports": ["layer3_out_6"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer3_out"
+        }]
+    },
+    "layer3_out_7": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"layer3_out_7": "DATA"},
+      "ports": ["layer3_out_7"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer3_out"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "input_1": {
+      "dir": "in",
+      "width": "48"
+    },
+    "input_1_ap_vld": {
+      "dir": "in",
+      "width": "1"
+    },
+    "layer3_out_0": {
+      "dir": "out",
+      "width": "6"
+    },
+    "layer3_out_0_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer3_out_1": {
+      "dir": "out",
+      "width": "6"
+    },
+    "layer3_out_1_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer3_out_2": {
+      "dir": "out",
+      "width": "6"
+    },
+    "layer3_out_2_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer3_out_3": {
+      "dir": "out",
+      "width": "6"
+    },
+    "layer3_out_3_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer3_out_4": {
+      "dir": "out",
+      "width": "6"
+    },
+    "layer3_out_4_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer3_out_5": {
+      "dir": "out",
+      "width": "6"
+    },
+    "layer3_out_5_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer3_out_6": {
+      "dir": "out",
+      "width": "6"
+    },
+    "layer3_out_6_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer3_out_7": {
+      "dir": "out",
+      "width": "6"
+    },
+    "layer3_out_7_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "myproject",
+      "Instances": [{
+          "ModuleName": "relu_ap_int_6_ap_int_6_ReLU_config3_s",
+          "InstanceName": "call_ret_relu_ap_int_6_ap_int_6_ReLU_config3_s_fu_136"
+        }]
+    },
+    "Info": {
+      "relu_ap_int_6_ap_int_6_ReLU_config3_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "myproject": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "1"
+      }
+    },
+    "Metrics": {
+      "relu_ap_int_6_ap_int_6_ReLU_config3_s": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "yes"
+        },
+        "Timing": {
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "1.195"
+        },
+        "Area": {
+          "FF": "0",
+          "AVAIL_FF": "460800",
+          "UTIL_FF": "0",
+          "LUT": "144",
+          "AVAIL_LUT": "230400",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "624",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "1728",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "96",
+          "UTIL_URAM": "0"
+        }
+      },
+      "myproject": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "yes"
+        },
+        "Timing": {
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "1.976"
+        },
+        "Area": {
+          "FF": "50",
+          "AVAIL_FF": "460800",
+          "UTIL_FF": "~0",
+          "LUT": "286",
+          "AVAIL_LUT": "230400",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "624",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "1728",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "96",
+          "UTIL_URAM": "0"
+        }
+      }
+    }
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2024-11-14 11:45:06 CST",
+    "ToolName": "vitis_hls",
+    "ToolVersion": "2023.2"
+  }
+}

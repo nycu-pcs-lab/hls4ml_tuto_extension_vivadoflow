@@ -1,0 +1,6 @@
+sv work "glbl.v"
+sv xil_defaultlib "myproject.autotb.v"
+sv xil_defaultlib "myproject.v"
+sv xil_defaultlib "myproject_relu_ap_int_6_ap_int_6_ReLU_config3_s.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

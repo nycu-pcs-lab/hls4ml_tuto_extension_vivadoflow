@@ -1,0 +1,27 @@
+<pragmas>
+<pragma file="firmware/myproject.cpp" line="16" pragmaType="pipeline" parentfunction="myproject" off="0" ii="-1" style=""/>
+<pragma file="firmware/myproject.cpp" line="13" pragmaType="array_reshape" parentfunction="myproject" dim="0" factor="0" mode="complete" variable="input_1"/>
+<pragma file="firmware/myproject.cpp" line="14" pragmaType="array_partition" parentfunction="myproject" dim="0" factor="0" mode="complete" dynamic="0" variable="layer3_out"/>
+<pragma file="firmware/myproject.cpp" line="15" pragmaType="interface" parentfunction="myproject" mode="ap_vld" port="layer3_out" name="" register="0"/>
+<pragma file="firmware/myproject.cpp" line="15" pragmaType="interface" parentfunction="myproject" mode="ap_vld" port="input_1" name="" register="0"/>
+<pragma file="firmware/myproject.cpp" line="31" pragmaType="array_partition" parentfunction="myproject" dim="0" factor="0" mode="complete" dynamic="0" variable="layer2_out"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home/share/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, true>::RType<32, true>::plus operator+<6, true, 32, true>(ap_int_base<6, true> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<6, true>(ap_int_base<6, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, true>::RType<($_0)32, true>::plus operator+<6, true>(ap_int_base<6, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<6>::ap_int<33>(ap_int<33> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<6, true>::operator><32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="/home/share/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="/home/share/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi6ELb1EEC2EDq6_i" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<6>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator><6, true>(ap_int_base<6, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="firmware/nnet_utils/nnet_activation.h" line="40" pragmaType="pipeline" parentfunction="relu" off="0" ii="-1" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>
